@@ -1,10 +1,14 @@
-.. image:: https://travis-ci.org/python-openxml/python-docx.svg?branch=master
-   :target: https://travis-ci.org/python-openxml/python-docx
+Easy-docx
+==========
 
-*python-docx* is a Python library for creating and updating Microsoft Word
-(.docx) files.
+Python library forked from  `python-docx <//github.com/python-openxml/python-docx/>`_.
 
-More information is available in the `python-docx documentation`_.
+The main purpose of the fork was to add implementation for comments and footnotes to the library
 
-.. _`python-docx documentation`:
-   https://python-docx.readthedocs.org/en/latest/
+Installation
+------------
+
+Use the package manager `pip <//pypi.org/project/easy-docx/>`_ to install easy-docx.
+
+
+`pip install easy-docx`

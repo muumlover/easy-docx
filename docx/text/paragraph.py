@@ -9,6 +9,7 @@ from __future__ import (
 )
 
 from ..enum.style import WD_STYLE_TYPE
+from .hyperlink import Hyperlink
 from .parfmt import ParagraphFormat
 from .run import Run
 from ..shared import Parented
@@ -61,6 +62,17 @@ class Paragraph(Parented):
         """
         self._p.clear_content()
         return self
+
+    @property
+    def hyperlinks(self):
+        return [Hyperlink(hyperlink, self) for hyperlink in self._p.hyperlink_lst]
+
+    @property
+    def hyperlink_text(self):
+        text = ''
+        for hyperlink in self.hyperlinks:
+            text += hyperlink.text
+        return text
 
     def insert_paragraph_before(self, text=None, style=None):
         """

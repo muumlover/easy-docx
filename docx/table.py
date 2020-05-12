@@ -222,6 +222,16 @@ class _Cell(BlockItemContainer):
         self.add_paragraph()
         return table
 
+
+    @property
+    def hyperlink_text(self):
+        """
+        The entire contents of this cell as a string of text. Assigning
+        a string to this property replaces all existing content with a single
+        paragraph containing the assigned text in a single run.
+        """
+        return '\n'.join(p.hyperlink_text for p in self.paragraphs)
+
     def merge(self, other_cell):
         """
         Return a merged cell created by spanning the rectangular region
