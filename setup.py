@@ -58,25 +58,26 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries'
 ]
 
-LONG_DESCRIPTION = text_of('README.rst') + '\n\n' + text_of('HISTORY.rst')
-
+# LONG_DESCRIPTION = text_of('README.rst') + '\n\n' + text_of('HISTORY.rst')
+# LONG_DESCRIPTION_CONTENT_TYPE = 'text/plain'
 
 params = {
-    'name':             NAME,
-    'version':          VERSION,
-    'description':      DESCRIPTION,
-    'keywords':         KEYWORDS,
-    'long_description': LONG_DESCRIPTION,
-    'author':           AUTHOR,
-    'author_email':     AUTHOR_EMAIL,
-    'url':              URL,
-    'license':          LICENSE,
-    'packages':         PACKAGES,
-    'package_data':     PACKAGE_DATA,
-    'install_requires': INSTALL_REQUIRES,
-    'tests_require':    TESTS_REQUIRE,
-    'test_suite':       TEST_SUITE,
-    'classifiers':      CLASSIFIERS,
+    'name':                             NAME,
+    'version':                          VERSION,
+    'description':                      DESCRIPTION,
+    'keywords':                         KEYWORDS,
+    # 'long_description':                 LONG_DESCRIPTION,
+    # 'long_description_content_type':    LONG_DESCRIPTION_CONTENT_TYPE,
+    'author':                           AUTHOR,
+    'author_email':                     AUTHOR_EMAIL,
+    'url':                              URL,
+    'license':                          LICENSE,
+    'packages':                         PACKAGES,
+    'package_data':                     PACKAGE_DATA,
+    'install_requires':                 INSTALL_REQUIRES,
+    'tests_require':                    TESTS_REQUIRE,
+    'test_suite':                       TEST_SUITE,
+    'classifiers':                      CLASSIFIERS,
 }
 
 setup(**params)
